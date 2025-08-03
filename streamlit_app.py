@@ -39,6 +39,6 @@ if user_input:
 # Display chat history
 for speaker, message in st.session_state.chat_history:
     if speaker == "You":
-        st.text(f"**{speaker}:** {message}")
+        st.write(f"**{speaker}:** {message}")
     else:
-        st.text(f"> **{speaker}:** {message}")
+        st.write(f"**{speaker}:** {message}")  # No blockquote, bold like the user
