@@ -39,6 +39,6 @@ if user_input:
 # Display chat history
 for speaker, message in st.session_state.chat_history:
     if speaker == "You":
-        st.markdown(f"**{speaker}:** {message}")
+        st.text(f"**{speaker}:** {message}")
     else:
-        st.markdown(f"> **{speaker}:** {message}")
+        st.text(f"> **{speaker}:** {message}")
